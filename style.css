@@ -1,0 +1,306 @@
+@charset "UTF-8";
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+   display: flex;
+   justify-content: center;
+   height: 120px;
+   border: 3px solid lightcyan;
+}
+
+.container {
+   display: flex;
+   justify-content: space-between;
+   width: 990px;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+}
+
+.menu {
+   display: flex;
+   align-items: center;
+}
+
+nav ul, nav li {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+nav ul {
+   display: flex;
+}
+
+nav a {
+   display: block;
+   padding: 15px;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #727272;
+}
+
+nav .active a {
+   background-color: #39aae1;
+   color: white;
+}
+
+nav a:hover {
+   background-color: #39aae1;
+   color: white;
+}
+
+#banner {
+   display: flex;
+   justify-content: center;
+   background-image: url('imagens/banner.jpg');
+   background-position: center;
+   background-size: cover;
+   height: 670px;
+}
+
+.column {
+   flex-direction: column;
+}
+
+.text {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   max-width: 300px;
+}
+
+.maior {
+   color: #7cd3ff;
+   font-size: 48px;
+   text-shadow: 2px 1px 2px #00000093;
+   margin: 0;
+   padding: 0;
+}
+
+.menor {
+   color: #7cd3ff;
+   font-size: 22px;
+   text-shadow: 1px 2px 2px #0000009a;
+   margin: 0;
+   padding: 0;
+}
+
+.options {
+   display: flex;
+   min-height: 210px;
+   color: white;
+}
+
+.option1, .option2, .option3 {
+   padding: 20px;
+}
+
+.option1 {
+   flex: 1;
+   background-color: #39aae1;
+}
+
+.option2 {
+   flex: 1;
+   background-color: #0079c7;
+}
+
+.option3 {
+   flex: 1;
+   background-color: #2b4c99;
+}
+
+#title1, #title2, #title3 {
+   font-weight: normal;
+   font-size: 22px;
+}
+
+button {
+   margin-top: 10px;
+   padding: 10px;
+   background-color: transparent;
+   border-color: white;
+   border-radius: 5px;
+   box-shadow: 1px 1px 1px;
+}
+
+
+button:hover {
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+#geral {
+   display: flex;
+   justify-content: center;
+}
+
+#geral section {
+   flex: 2;
+}
+
+#geral aside {
+   flex: 1;
+}
+
+.flex {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+article {
+   flex: 1;
+   min-width: 300px;
+   margin-right: 10px;
+}
+
+
+.widget_title {
+   margin-top: 30px;
+   margin-bottom: 20px;
+}
+
+.widget_title_text {
+   color: black;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.widget_title_bar {
+   width: 50px;
+   height: 3px;
+   background-color: #39aae1;
+   margin-top: 10px;
+}
+
+article a {
+   text-decoration: none;
+}
+
+article .news_data {
+   display: flex;
+}
+
+article .news_posted_at {
+   background-color: #2b4c99;
+   color: white;
+   font-size: 12px;
+   padding: 10px;
+   margin-right: 2px;
+   margin-top: 5px;
+}
+
+article .news_comments {
+   background-color: #39aae1;
+   color: white;
+   font-size: 12px;
+   padding: 10px;
+   margin-top: 5px;
+}
+
+article .news_thumb img {
+   width: 100%;
+   height: auto;
+   margin-top: 20px;
+}
+
+article .news_title {
+   font-size: 21px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   color: black;
+}
+
+article .news_resume {
+   color: #3c3c3c;
+   line-height: 18px;
+   font-size: 14px;
+   text-align: justify;
+   margin-bottom: 20px;
+}
+
+footer {
+   background-color: #1e1e1e;
+   color: white;
+   display: flex;
+   justify-content: center;
+}
+
+.footer_menu {
+   display: flex;
+}
+
+.fm_1, .fm_2, .fm_3 {
+   flex: 1;
+   color: white;
+   padding: 20px;
+}
+
+.fm_1 {
+   background-color: #39aae1;
+}
+
+.fm_2 {
+   background-color: #0079c7;
+}
+
+.fm_3 {
+   background-color: #2b4c99;
+}
+
+.footer_area {
+   display: flex;
+   color: white;
+}
+
+.footer_areaitem {
+   display: flex;
+   flex: 1;
+}
+
+.flexcolumn {
+   flex-direction: column;
+}
+
+footer .widget {
+   flex: 1;
+   justify-content: space-between;
+}
+
+footer .widget_title_text {
+   color: white;
+}
+
+.footer_copy {
+   border-top: 1px solid #2c2c2c;
+   height: 40px;
+   line-height: 40px;
+   color: #5c5c5c;
+   font-size: 12px;
+}
+
+@media (max-width:550px) {
+
+   .maior {
+      font-size: 38px;
+   }
+
+   .menor {
+      font-size: 16px;
+   }
+
+   .options {
+      height: auto;
+      flex-direction: column;
+   }
+
+}
